@@ -1,4 +1,6 @@
-
+import './Footer.scss';
+import { RiArrowRightSLine, RiFacebookFill, RiYoutubeFill, RiTwitterFill } from "react-icons/ri";
+import { ImInstagram } from "react-icons/im";
 
 export const Footer= ()=>{
     return(
@@ -6,7 +8,7 @@ export const Footer= ()=>{
             <div className="Footer_Email">
                 <div className="Left_side">
                     <div className="Left_first">
-                        <h2>LET'S STAY IN TOUCH</h2>
+                        <h3>LET'S STAY IN TOUCH</h3>
                         <p>Get updates on sales specials and more</p>
                     </div>
                     <div className="Left_second">
@@ -15,11 +17,11 @@ export const Footer= ()=>{
                     </div>
                 </div>
                 <div className="Right_side">
-                    <div className="Left_first">
-                        <h2>FOLLOW MI</h2>
+                    <div className="Right_first">
+                        <h3>FOLLOW MI</h3>
                         <p>We want to hear from you!</p>
                     </div>
-                    <div className="Left_second">
+                    <div className="Right_second">
                         <RiFacebookFill className="L_Logos"/>
                         <RiYoutubeFill className="L_Logos"/>
                         <ImInstagram className="L_Logos"/>

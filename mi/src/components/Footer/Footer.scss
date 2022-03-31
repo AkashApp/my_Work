@@ -1,0 +1,93 @@
+.Footer_Page{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+
+    .Footer_Email{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+
+        .Left_side{
+            display:flex;
+            align-items:center;
+            justify-content:space-around;
+
+            .Left_first{
+                display:flex;
+                flex-direction:column;
+                padding: 0;
+                margin: 0;
+                text-align: start;
+                font-weight: 50;
+
+                h3{
+                    line-height: 0;
+                    font-weight: 500;
+                }
+                p{
+                    line-height: 0;
+                    font-size: 14px;
+                }
+            }
+            .Left_second{
+                display:flex;
+                padding: 0;
+                margin: 0;
+                margin-left:50px;
+
+                input{
+                    width:120%;
+                    height: 30px;
+                }
+
+                .R_Arrow{
+                    margin-left:-20px;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .Right_side{
+            display:flex;
+            align-items:center;
+            justify-content:space-evenly;
+
+            .Right_first{
+                display:flex;
+                flex-direction:column;
+                padding: 0;
+                margin: 0;
+                text-align: start;
+                font-weight: 50;
+    
+                h3{
+                    line-height: 0;
+                    font-weight: 500;
+                }
+                p{
+                    line-height: 0;
+                    font-size: 14px;
+                }
+            }
+            .Right_second{
+                display:flex;
+                align-items:center;
+                gap:25px;
+                margin:0;
+                padding: 0;
+                margin-left: 50px;
+
+                .L_Logos{
+                    font-size:20px;
+                }
+            }
+        }
+    }
+    .Black_Image{
+        width: 100%;
+        padding-top:18px;
+    }
+}
