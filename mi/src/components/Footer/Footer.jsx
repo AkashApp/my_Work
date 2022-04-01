@@ -13,7 +13,7 @@ export const Footer= ()=>{
                     </div>
                     <div className="Left_second">
                         <input type="email" placeholder='Enter Email Address'/>
-                        <RiArrowRightSLine className="R_Arrow"/>
+                        <a href="#"><RiArrowRightSLine className="R_Arrow"/></a>
                     </div>
                 </div>
                 <div className="Right_side">
@@ -22,10 +22,10 @@ export const Footer= ()=>{
                         <p>We want to hear from you!</p>
                     </div>
                     <div className="Right_second">
-                        <RiFacebookFill className="L_Logos"/>
-                        <RiYoutubeFill className="L_Logos"/>
-                        <ImInstagram className="L_Logos"/>
-                        <RiTwitterFill className="L_Logos"/>
+                        <a href="#"><RiFacebookFill className="L_Logos"/></a>
+                        <a href="#"><RiYoutubeFill className="L_Logos"/></a>
+                        <a href="#"><ImInstagram className="L_Logos"/></a>
+                        <a href="#"><RiTwitterFill className="L_Logos"/></a>
                     </div>
                 </div>
             </div>
