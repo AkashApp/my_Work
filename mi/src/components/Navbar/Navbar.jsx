@@ -133,6 +133,7 @@ export const Navbar= ()=>{
             Title:"More"
         }
     ];
+    const Blank=[];
 
     const [slider, setSlider]= useState([]);
 
@@ -150,6 +151,9 @@ export const Navbar= ()=>{
     }
     const HandleSmart= ()=>{
         setSlider([...Smart]);
+    }
+    const OutHandle= ()=>{
+        setSlider([...Blank]);
     }
 
     return(
@@ -172,10 +176,10 @@ export const Navbar= ()=>{
                     </div>
                 </div>
             </div>
-            <div className="Navbar_Lower_Main">
+            <div className="Navbar_Lower_Main" onMouseLeave={OutHandle}>
                 <div className="Navbar_Lower">
                     <div className="Mi_Logo">
-                        <Link to={'/'} className="Mi_Home" ><img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" alt="Mi_Home" /></Link>
+                        <Link to={'/'} className="Mi_Home" onMouseOver={OutHandle}><img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" alt="Mi_Home" /></Link>
                     </div>
                     <div className="Hover_Nav_Links">
                         <div className="Hover_First">
@@ -186,20 +190,22 @@ export const Navbar= ()=>{
                             <p className="Slider_Links" onMouseOver={HandleSmart}>Smart Devices</p>
                         </div>
                         <div className="Hover_Second">
-                            <Link to={'/'} className="Non_Slider_Links">All Products</Link>
-                            <Link to={'/'} className="Non_Slider_Links">Product Authentication</Link>
-                            <Link to={'/'} className="Non_Slider_Links">Discover</Link>
+                            <Link to={'/'} className="Non_Slider_Links" onMouseOver={OutHandle}>All Products</Link>
+                            <Link to={'/'} className="Non_Slider_Links" onMouseOver={OutHandle}>Product Authentication</Link>
+                            <Link to={'/'} className="Non_Slider_Links" onMouseOver={OutHandle}>Discover</Link>
                         </div>
                     </div>
-                    <div className="Nav_Slider_Main">
-                        <div className="Inner_Slider">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                </div>
+                <div className="Nav_Slider_Main">
+                    <div className="Inner_Slider">
+                        {slider.map((item)=>(
+                            <Link to={'/'} className="Item_Link">
+                                <div className="Slider_Item">
+                                    <img src={item.img} alt="" />
+                                    <p>{item.Title}</p>
+                                </div>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>

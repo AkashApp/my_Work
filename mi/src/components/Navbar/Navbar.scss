@@ -6,6 +6,7 @@
     flex-direction: column;
     margin:0;
     padding:0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     .Navbar_Upper_Main{
         width: 100%;
@@ -15,7 +16,6 @@
         padding:0;
         margin:0;
         background-color: rgb(33,33,33);
-
 
         .Navbar_Upper{
             width: 92%;
@@ -73,10 +73,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction:column;
         padding:0;
         margin:0;
         background-color: transparent;
-        border-bottom: 1px solid rgb(176,176,176);
+        position: relative;
 
         .Navbar_Lower{
             width: 92%;
@@ -85,6 +86,7 @@
             justify-content: space-between;
             padding:0;
             margin:0;
+            
 
             .Mi_Logo{
                 width: 60px;
@@ -93,6 +95,7 @@
                 border-radius:40%;
                 overflow-x:hidden;
                 margin: 10px 0px;
+                
 
                 .Mi_Home{
                     width: 100%;
@@ -149,6 +152,37 @@
                         &:hover{
                             color:rgb(255,105,0);
                         }
+                    }
+                }
+            }
+        }
+        .Nav_Slider_Main{
+            width: 100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding: 0;
+            margin: 0;
+            margin-top:20%;
+            position: absolute;
+            background-color:white;
+            transition: all 0.5s ease;
+
+            .Inner_Slider{
+                width: 85%;
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                padding: 0;
+                margin: 0;
+
+                .Item_Link{
+                    text-decoration: none;
+                    margin: 0;
+                    padding: 0;
+
+                    p{
+                        color: black;
                     }
                 }
             }
