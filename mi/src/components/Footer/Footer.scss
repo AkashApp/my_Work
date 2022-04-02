@@ -33,6 +33,7 @@
                 p{
                     line-height: 0;
                     font-size: 14px;
+                    margin-top: 30px;
                 }
             }
             .Left_second{
@@ -47,8 +48,11 @@
                 }
 
                 .R_Arrow{
-                    margin-left:-20px;
-                    padding-top: 10px;
+                    color:black;
+                    font-size:30px;
+                    margin-left:-25px;
+                    z-index: 10;
+                    cursor: pointer;
                 }
             }
         }
@@ -72,6 +76,7 @@
                 p{
                     line-height: 0;
                     font-size: 14px;
+                    margin-top: 30px;
                 }
             }
             .Right_second{

@@ -95,5 +95,50 @@
                 }
             }
         }
+        .Videos_Main{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:0;
+            padding:0;
+            margin-bottom:100px;
+
+            .Three_Vid{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                text-decoration: none;
+                color:rgb(176,176,176);
+
+                &:hover{
+                    color: white;
+                }
+
+                img{
+                    margin: 0;
+                    padding:0;
+
+                    &:hover{
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    }
+                }
+                .Play_Container{
+                    z-index: 3;
+                    padding-top: -200px;
+                    position: absolute;
+
+                    .Play{
+                        font-size:80px;
+                    }
+                    .Heading{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -164,16 +164,23 @@ export const Navbar = () => {
             <a href="#" className="UpperNav_Links">
               INTERNATIONAL
             </a>
-            <p>|</p>
+            <p className="P_Tag">|</p>
             <a href="#" className="UpperNav_Links">
               MI COMMUNITY
             </a>
-            <p>|</p>
-            <a href="#" className="UpperNav_Links">
+            <p className="P_Tag">|</p>
+            <a
+              href="https://global.miui.com/en"
+              target="_blank"
+              className="UpperNav_Links"
+            >
               MIUI
             </a>
-            <p>|</p>
-            <a href="#" className="UpperNav_Links">
+            <p className="P_Tag">|</p>
+            <a
+              href="https://event.mi.com/global/xiaomistudios"
+              className="UpperNav_Links"
+            >
               XIAOMI STUDIOS
             </a>
           </div>
@@ -181,7 +188,7 @@ export const Navbar = () => {
             <Link to={"/"} className="UpperNav_Links">
               SIGN IN
             </Link>
-            <p>|</p>
+            <p className="P_Tag">|</p>
             <Link to={"/"} className="UpperNav_Links">
               SIGN UP
             </Link>

@@ -1,22 +1,12 @@
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import { SliderHome } from "./Slider/SliderHome";
-// import Carousel from "react-elastic-carousel";
-// import { Card } from "./Card";
+import { AiFillPlayCircle } from "react-icons/ai";
 
 export const Home = () => {
   return (
     <div className="Home_Main">
       <div className="Home_Sliding">
-        {/* <Carousel>
-          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/event/2022-mff-banner-en.jpg" />
-          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/New-Product-Banner/RN-11Pro-Plus5G-en-Banner.jpg" />
-          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/New-Product-Banner/Xiaomi-12-Pro-banner-en.jpg" />
-          <Card images="https://i01.appmifile.com/webfile/globalimg/dongxuechun/rn11pro5g.jpg" />
-          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/event/youtube-event-banner.jpg" />
-          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/New-Product-Banner/mi-11t-pro-banner.jpg" />
-          <Card images="https://i01.appmifile.com/webfile/globalimg/dongxuechun/k9dbannerEn.jpg" />
-        </Carousel> */}
         <SliderHome />
       </div>
       <div className="All_Main">
@@ -86,6 +76,59 @@ export const Home = () => {
               </Link>
             </div>
           </div>
+        </div>
+        <div className="Star_Main">
+          <div className="Star_Line">
+            <hr />
+          </div>
+          <div className="Star_Name">VIDEOS</div>
+          <div className="Star_Line">
+            <hr />
+          </div>
+        </div>
+        <div className="Videos_Main">
+          <a
+            href="https://youtu.be/M-SNCMOrBUQ"
+            target="_blank"
+            className="Three_Vid"
+          >
+            <img
+              src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/11tprovideo.jpg?width=398&height=320"
+              alt="Redmi Note 10S"
+            />
+            <div className="Play_Container">
+              <AiFillPlayCircle className="Play" />
+              <p className="Heading">Meet Xiaomi 11T Pro | Key Features</p>
+            </div>
+          </a>
+          <a
+            href="https://youtu.be/bNuz4m9Pj3Y"
+            target="_blank"
+            className="Three_Vid"
+          >
+            <img
+              src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/lite5gnevideo.jpg?width=398&height=320"
+              alt="Redmi Note 10 Pro"
+            />
+            <div className="Play_Container">
+              <AiFillPlayCircle className="Play" />
+              <p className="Heading">Own Your Style | Xiaomi 11 Lite 5G NE</p>
+            </div>
+          </a>
+          <a
+            href="https://youtu.be/pPGzX_y8ccM"
+            target="_blank"
+            className="Three_Vid"
+          >
+            <img
+              src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/Pad_5_video.png?width=398&height=320"
+              alt="Redmi Note 10"
+            />
+            <div className="Play_Container">
+              <AiFillPlayCircle className="Play" />
+              <p className="Heading">Xiaomi Pad 5 | Play Hard Work Smart</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
