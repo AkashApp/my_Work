@@ -1,12 +1,23 @@
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import { Slider } from "./Slider/Slider";
+import { SliderHome } from "./Slider/SliderHome";
+// import Carousel from "react-elastic-carousel";
+// import { Card } from "./Card";
 
 export const Home = () => {
   return (
     <div className="Home_Main">
       <div className="Home_Sliding">
-        <Slider />
+        {/* <Carousel>
+          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/event/2022-mff-banner-en.jpg" />
+          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/New-Product-Banner/RN-11Pro-Plus5G-en-Banner.jpg" />
+          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/New-Product-Banner/Xiaomi-12-Pro-banner-en.jpg" />
+          <Card images="https://i01.appmifile.com/webfile/globalimg/dongxuechun/rn11pro5g.jpg" />
+          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/event/youtube-event-banner.jpg" />
+          <Card images="https://i01.appmifile.com/webfile/globalimg/0320/TO-B/New-Product-Banner/mi-11t-pro-banner.jpg" />
+          <Card images="https://i01.appmifile.com/webfile/globalimg/dongxuechun/k9dbannerEn.jpg" />
+        </Carousel> */}
+        <SliderHome />
       </div>
       <div className="All_Main">
         <div className="First_Three">
